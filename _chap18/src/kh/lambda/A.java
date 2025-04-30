@@ -12,6 +12,11 @@ interface D {
 }
 
 interface C {
-	// 입력 없고, 리턴 있다.
+	// 입력 있고, 리턴 있다.
 	int methodC();
+}
+
+interface E {
+	// 입력 있고, 리턴 없다
+	void methodE(int F);
 }
