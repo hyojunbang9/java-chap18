@@ -18,6 +18,13 @@ public class InstanceLambdaMain {
 		A a2 = Bobject::bcd;
 		a.method();
 
+		ATest atest = (b, k) -> b.bcd(k);
+		//위에가 어떻게 이게 되냐고
+		ATest atest2 = B::bcd;
+		
+		atest.abc(new B(), 10);
+		atest2.abc(new B(), 20);
+		
 		System.out.println("이게 끝 맞냐고 ㅋㅋㅋ");
 	}
 
